@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_58b6a61224f79a7967ffe253fb7a594b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/marslan390/BeautifyMarker/leaflet-beautify-marker-icon.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/marslan390/BeautifyMarker/leaflet-beautify-marker-icon.min.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_58b6a61224f79a7967ffe253fb7a594b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_58b6a61224f79a7967ffe253fb7a594b = L.map(
+                "map_58b6a61224f79a7967ffe253fb7a594b",
+                {
+                    center: [23.6345, -102.5528],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1abd074e0d8502237e12594d0cf28469 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_1abd074e0d8502237e12594d0cf28469.addTo(map_58b6a61224f79a7967ffe253fb7a594b);
+        
+    
+            var polygon_233a107a25d7815ea61d344d035b6119 = L.polygon(
+                [[17.0732, -98.0], [18.0, -97.0], [17.0, -95.0], [16.5, -96.0]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_58b6a61224f79a7967ffe253fb7a594b);
+        
+    
+        var popup_a1b01b514e398bf42505a6936a8301bc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c2721bb093ec74f159684586399cca8e = $(`<div id="html_c2721bb093ec74f159684586399cca8e" style="width: 100.0%; height: 100.0%;"><b>Oaxaca</b><br>Known for its mole, Oaxaca cuisine blends dozens of spices and ingredients, such as chiles, chocolate, nuts, and herbs, to create rich and complex flavors.</div>`)[0];
+                popup_a1b01b514e398bf42505a6936a8301bc.setContent(html_c2721bb093ec74f159684586399cca8e);
+            
+        
+
+        polygon_233a107a25d7815ea61d344d035b6119.bindPopup(popup_a1b01b514e398bf42505a6936a8301bc)
+        ;
+
+        
+    
+    
+            var marker_bedce15b23f84cab2da55bfb2dea772c = L.marker(
+                [17.1433, -96.5],
+                {}
+            ).addTo(map_58b6a61224f79a7967ffe253fb7a594b);
+        
+    
+            var beautify_icon_099af97255269b4ec1cd42c0237b1c06 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "red", "borderColor": "red", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "white"}
+            )
+            marker_bedce15b23f84cab2da55bfb2dea772c.setIcon(beautify_icon_099af97255269b4ec1cd42c0237b1c06);
+        
+    
+        var popup_ba3c2745ac05a442435d3c3366424f10 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1f1f584de92ee54c9af5c587c7ad9bfc = $(`<div id="html_1f1f584de92ee54c9af5c587c7ad9bfc" style="width: 100.0%; height: 100.0%;"><b>Oaxaca</b><br>Known for its mole, Oaxaca cuisine blends dozens of spices and ingredients, such as chiles, chocolate, nuts, and herbs, to create rich and complex flavors.</div>`)[0];
+                popup_ba3c2745ac05a442435d3c3366424f10.setContent(html_1f1f584de92ee54c9af5c587c7ad9bfc);
+            
+        
+
+        marker_bedce15b23f84cab2da55bfb2dea772c.bindPopup(popup_ba3c2745ac05a442435d3c3366424f10)
+        ;
+
+        
+    
+    
+            var polygon_51125289216b4368153f835aa3813f40 = L.polygon(
+                [[20.5, -90.5], [21.0, -88.0], [19.5, -87.0], [19.0, -90.0]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_58b6a61224f79a7967ffe253fb7a594b);
+        
+    
+        var popup_a6f4fc68c7bc9ae283e7cf1adfd9782a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ff65a88b59f96c36b89ebe66cf21468d = $(`<div id="html_ff65a88b59f96c36b89ebe66cf21468d" style="width: 100.0%; height: 100.0%;"><b>Yucatan</b><br>Yucatan cuisine features citrus and achiote as primary ingredients, offering bright, tangy, and earthy flavors that reflect a blend of Maya and Spanish influences.</div>`)[0];
+                popup_a6f4fc68c7bc9ae283e7cf1adfd9782a.setContent(html_ff65a88b59f96c36b89ebe66cf21468d);
+            
+        
+
+        polygon_51125289216b4368153f835aa3813f40.bindPopup(popup_a6f4fc68c7bc9ae283e7cf1adfd9782a)
+        ;
+
+        
+    
+    
+            var marker_9e194c8045bf1f3038c3ebc0748b4f1e = L.marker(
+                [20.0, -88.875],
+                {}
+            ).addTo(map_58b6a61224f79a7967ffe253fb7a594b);
+        
+    
+            var beautify_icon_cc5245f26a3da85dd674abbc35984ace = new L.BeautifyIcon.icon(
+                {"backgroundColor": "orange", "borderColor": "orange", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "white"}
+            )
+            marker_9e194c8045bf1f3038c3ebc0748b4f1e.setIcon(beautify_icon_cc5245f26a3da85dd674abbc35984ace);
+        
+    
+        var popup_4ba584621d506f2fa86b7e74bbe89e46 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_384ed13ea5b0a57fe3387af56faddebb = $(`<div id="html_384ed13ea5b0a57fe3387af56faddebb" style="width: 100.0%; height: 100.0%;"><b>Yucatan</b><br>Yucatan cuisine features citrus and achiote as primary ingredients, offering bright, tangy, and earthy flavors that reflect a blend of Maya and Spanish influences.</div>`)[0];
+                popup_4ba584621d506f2fa86b7e74bbe89e46.setContent(html_384ed13ea5b0a57fe3387af56faddebb);
+            
+        
+
+        marker_9e194c8045bf1f3038c3ebc0748b4f1e.bindPopup(popup_4ba584621d506f2fa86b7e74bbe89e46)
+        ;
+
+        
+    
+    
+            var polygon_2e411d14b4257b4862a3e9b9885bb4e4 = L.polygon(
+                [[29.0, -110.0], [28.0, -108.0], [27.5, -106.0], [29.5, -104.0]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_58b6a61224f79a7967ffe253fb7a594b);
+        
+    
+        var popup_5d61890df379f0881c22ff7892a5e43e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_688450b5ec113a7f2a7cf9a067633ac8 = $(`<div id="html_688450b5ec113a7f2a7cf9a067633ac8" style="width: 100.0%; height: 100.0%;"><b>Northern Mexico</b><br>Northern Mexican cuisine focuses on smoky and grilled flavors, often using beef and lamb, paired with flour tortillas for a hearty and robust taste.</div>`)[0];
+                popup_5d61890df379f0881c22ff7892a5e43e.setContent(html_688450b5ec113a7f2a7cf9a067633ac8);
+            
+        
+
+        polygon_2e411d14b4257b4862a3e9b9885bb4e4.bindPopup(popup_5d61890df379f0881c22ff7892a5e43e)
+        ;
+
+        
+    
+    
+            var marker_bfc08fa93c763f78e158ef113af704bd = L.marker(
+                [28.5, -107.0],
+                {}
+            ).addTo(map_58b6a61224f79a7967ffe253fb7a594b);
+        
+    
+            var beautify_icon_206dadd26b10391733b03d1939169401 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "blue", "borderColor": "blue", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "white"}
+            )
+            marker_bfc08fa93c763f78e158ef113af704bd.setIcon(beautify_icon_206dadd26b10391733b03d1939169401);
+        
+    
+        var popup_693f5ab59e42cc091668f2ae8cf479ed = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f8ca9b57a137819dc95108412685f942 = $(`<div id="html_f8ca9b57a137819dc95108412685f942" style="width: 100.0%; height: 100.0%;"><b>Northern Mexico</b><br>Northern Mexican cuisine focuses on smoky and grilled flavors, often using beef and lamb, paired with flour tortillas for a hearty and robust taste.</div>`)[0];
+                popup_693f5ab59e42cc091668f2ae8cf479ed.setContent(html_f8ca9b57a137819dc95108412685f942);
+            
+        
+
+        marker_bfc08fa93c763f78e158ef113af704bd.bindPopup(popup_693f5ab59e42cc091668f2ae8cf479ed)
+        ;
+
+        
+    
+    
+            var polygon_96958961beab2e6dcc8c46d592be26d8 = L.polygon(
+                [[19.0413, -98.2062], [19.5, -97.5], [18.5, -97.0], [18.0, -98.5]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_58b6a61224f79a7967ffe253fb7a594b);
+        
+    
+        var popup_21ce05ce128bfef9b501d1a0d9883527 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_695d4ddb2da6975c500041e0d732354a = $(`<div id="html_695d4ddb2da6975c500041e0d732354a" style="width: 100.0%; height: 100.0%;"><b>Puebla</b><br>Puebla is famous for Mole Poblano, a sauce made from over 20 ingredients, including chocolate, chiles, and nuts, resulting in a rich, spicy, and slightly sweet flavor.</div>`)[0];
+                popup_21ce05ce128bfef9b501d1a0d9883527.setContent(html_695d4ddb2da6975c500041e0d732354a);
+            
+        
+
+        polygon_96958961beab2e6dcc8c46d592be26d8.bindPopup(popup_21ce05ce128bfef9b501d1a0d9883527)
+        ;
+
+        
+    
+    
+            var marker_051c90422e4e0d2edcbaa5348173c54e = L.marker(
+                [18.760325, -97.80154999999999],
+                {}
+            ).addTo(map_58b6a61224f79a7967ffe253fb7a594b);
+        
+    
+            var beautify_icon_32204ea6ae6e21553058a56641bc8311 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "green", "borderColor": "green", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "white"}
+            )
+            marker_051c90422e4e0d2edcbaa5348173c54e.setIcon(beautify_icon_32204ea6ae6e21553058a56641bc8311);
+        
+    
+        var popup_65a2e525faa75d051c795fd076428294 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_14bbd0fcbb4b98c409cabd1937d36bcc = $(`<div id="html_14bbd0fcbb4b98c409cabd1937d36bcc" style="width: 100.0%; height: 100.0%;"><b>Puebla</b><br>Puebla is famous for Mole Poblano, a sauce made from over 20 ingredients, including chocolate, chiles, and nuts, resulting in a rich, spicy, and slightly sweet flavor.</div>`)[0];
+                popup_65a2e525faa75d051c795fd076428294.setContent(html_14bbd0fcbb4b98c409cabd1937d36bcc);
+            
+        
+
+        marker_051c90422e4e0d2edcbaa5348173c54e.bindPopup(popup_65a2e525faa75d051c795fd076428294)
+        ;
+
+        
+    
+    
+            var polygon_9c28ff5cb3247ad1f9a1d7d0d32e2900 = L.polygon(
+                [[20.6597, -104.0], [21.5, -102.0], [20.0, -103.5], [19.5, -105.0]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_58b6a61224f79a7967ffe253fb7a594b);
+        
+    
+        var popup_cc0f9cb90ccfaa18296ff23905e1867f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_71b90b6e594e321f2b27ea972db2affc = $(`<div id="html_71b90b6e594e321f2b27ea972db2affc" style="width: 100.0%; height: 100.0%;"><b>Jalisco</b><br>Jalisco features birria, a slow-cooked meat stew with a blend of spices, and is known for its tequila, which adds a unique fruity and spicy aroma.</div>`)[0];
+                popup_cc0f9cb90ccfaa18296ff23905e1867f.setContent(html_71b90b6e594e321f2b27ea972db2affc);
+            
+        
+
+        polygon_9c28ff5cb3247ad1f9a1d7d0d32e2900.bindPopup(popup_cc0f9cb90ccfaa18296ff23905e1867f)
+        ;
+
+        
+    
+    
+            var marker_84a8a7d85623a54598641e1052728d47 = L.marker(
+                [20.414925, -103.625],
+                {}
+            ).addTo(map_58b6a61224f79a7967ffe253fb7a594b);
+        
+    
+            var beautify_icon_65771fa7d3365b16aa62f7f2b551b2ef = new L.BeautifyIcon.icon(
+                {"backgroundColor": "purple", "borderColor": "purple", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "white"}
+            )
+            marker_84a8a7d85623a54598641e1052728d47.setIcon(beautify_icon_65771fa7d3365b16aa62f7f2b551b2ef);
+        
+    
+        var popup_2d68439deb79633575cffeef94d49dd0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e8143f6b840efced8ae40204cfd4c076 = $(`<div id="html_e8143f6b840efced8ae40204cfd4c076" style="width: 100.0%; height: 100.0%;"><b>Jalisco</b><br>Jalisco features birria, a slow-cooked meat stew with a blend of spices, and is known for its tequila, which adds a unique fruity and spicy aroma.</div>`)[0];
+                popup_2d68439deb79633575cffeef94d49dd0.setContent(html_e8143f6b840efced8ae40204cfd4c076);
+            
+        
+
+        marker_84a8a7d85623a54598641e1052728d47.bindPopup(popup_2d68439deb79633575cffeef94d49dd0)
+        ;
+
+        
+    
+    
+            var polygon_b2da1e5266b83a01c49f771797b74f4b = L.polygon(
+                [[19.1738, -96.5], [20.0, -95.0], [18.5, -94.0], [18.0, -96.0]],
+                {"bubblingMouseEvents": true, "color": "pink", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "pink", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_58b6a61224f79a7967ffe253fb7a594b);
+        
+    
+        var popup_beb9af77e5f44b669bff02b4fdbe4710 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b783b81c836e7ff1239a41c0ed8578d9 = $(`<div id="html_b783b81c836e7ff1239a41c0ed8578d9" style="width: 100.0%; height: 100.0%;"><b>Veracruz</b><br>Veracruz cuisine combines Spanish and Caribbean influences, featuring seafood dishes like Huachinango a la Veracruzana, which balance sweet and sour flavors with tomatoes, olives, and herbs.</div>`)[0];
+                popup_beb9af77e5f44b669bff02b4fdbe4710.setContent(html_b783b81c836e7ff1239a41c0ed8578d9);
+            
+        
+
+        polygon_b2da1e5266b83a01c49f771797b74f4b.bindPopup(popup_beb9af77e5f44b669bff02b4fdbe4710)
+        ;
+
+        
+    
+    
+            var marker_ebc00a90f277ac3f5997b6211ef15154 = L.marker(
+                [18.91845, -95.375],
+                {}
+            ).addTo(map_58b6a61224f79a7967ffe253fb7a594b);
+        
+    
+            var beautify_icon_b0ed00a0946ce5c7c358ffd60e2ee70f = new L.BeautifyIcon.icon(
+                {"backgroundColor": "pink", "borderColor": "pink", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "white"}
+            )
+            marker_ebc00a90f277ac3f5997b6211ef15154.setIcon(beautify_icon_b0ed00a0946ce5c7c358ffd60e2ee70f);
+        
+    
+        var popup_832bf70d473d3858f8001d5eb4307af6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_541725a2767ac7dd691cce1c95321895 = $(`<div id="html_541725a2767ac7dd691cce1c95321895" style="width: 100.0%; height: 100.0%;"><b>Veracruz</b><br>Veracruz cuisine combines Spanish and Caribbean influences, featuring seafood dishes like Huachinango a la Veracruzana, which balance sweet and sour flavors with tomatoes, olives, and herbs.</div>`)[0];
+                popup_832bf70d473d3858f8001d5eb4307af6.setContent(html_541725a2767ac7dd691cce1c95321895);
+            
+        
+
+        marker_ebc00a90f277ac3f5997b6211ef15154.bindPopup(popup_832bf70d473d3858f8001d5eb4307af6)
+        ;
+
+        
+    
+    
+            var polygon_d184246ac6107ea60de00f0678e0d6d7 = L.polygon(
+                [[19.5665, -102.5], [20.0, -101.0], [19.0, -100.5], [18.5, -102.0]],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "brown", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_58b6a61224f79a7967ffe253fb7a594b);
+        
+    
+        var popup_088ed38f6f3759dbdd5b4fadf5aef348 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f9980eb4af1a15b9fbc8430e6f470a6c = $(`<div id="html_f9980eb4af1a15b9fbc8430e6f470a6c" style="width: 100.0%; height: 100.0%;"><b>Michoacan</b><br>Michoacan is known for carnitas, slow-cooked pork with a crispy exterior and tender inside, showcasing a rustic and traditional flavor.</div>`)[0];
+                popup_088ed38f6f3759dbdd5b4fadf5aef348.setContent(html_f9980eb4af1a15b9fbc8430e6f470a6c);
+            
+        
+
+        polygon_d184246ac6107ea60de00f0678e0d6d7.bindPopup(popup_088ed38f6f3759dbdd5b4fadf5aef348)
+        ;
+
+        
+    
+    
+            var marker_138ea1443309a6f81125ad96d50e394e = L.marker(
+                [19.266625, -101.5],
+                {}
+            ).addTo(map_58b6a61224f79a7967ffe253fb7a594b);
+        
+    
+            var beautify_icon_bf007fc44deb69d15212f39e55615f9c = new L.BeautifyIcon.icon(
+                {"backgroundColor": "brown", "borderColor": "brown", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "white"}
+            )
+            marker_138ea1443309a6f81125ad96d50e394e.setIcon(beautify_icon_bf007fc44deb69d15212f39e55615f9c);
+        
+    
+        var popup_348699ee99a014548666c3f27c48c47c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_34594acb388894af653c816cd2460ef2 = $(`<div id="html_34594acb388894af653c816cd2460ef2" style="width: 100.0%; height: 100.0%;"><b>Michoacan</b><br>Michoacan is known for carnitas, slow-cooked pork with a crispy exterior and tender inside, showcasing a rustic and traditional flavor.</div>`)[0];
+                popup_348699ee99a014548666c3f27c48c47c.setContent(html_34594acb388894af653c816cd2460ef2);
+            
+        
+
+        marker_138ea1443309a6f81125ad96d50e394e.bindPopup(popup_348699ee99a014548666c3f27c48c47c)
+        ;
+
+        
+    
+    
+            var polygon_f93f77538061834e16ae6abe15dd3ec1 = L.polygon(
+                [[28.6353, -108.0], [29.5, -106.5], [27.5, -105.0], [28.0, -109.0]],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_58b6a61224f79a7967ffe253fb7a594b);
+        
+    
+        var popup_c97921b93b821a7ac3b57a9345513684 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_628bdc3f7205fd3692def5c93b9afdda = $(`<div id="html_628bdc3f7205fd3692def5c93b9afdda" style="width: 100.0%; height: 100.0%;"><b>Chihuahua</b><br>Chihuahua is famous for its dairy products, especially cheese, which brings a rich, creamy flavor to dishes like queso Chihuahua, complementing corn tortillas perfectly.</div>`)[0];
+                popup_c97921b93b821a7ac3b57a9345513684.setContent(html_628bdc3f7205fd3692def5c93b9afdda);
+            
+        
+
+        polygon_f93f77538061834e16ae6abe15dd3ec1.bindPopup(popup_c97921b93b821a7ac3b57a9345513684)
+        ;
+
+        
+    
+    
+            var marker_2485a8537d45a6c80a35932e56a4cb67 = L.marker(
+                [28.408825, -107.125],
+                {}
+            ).addTo(map_58b6a61224f79a7967ffe253fb7a594b);
+        
+    
+            var beautify_icon_40e1b384295da9c9d1aa5ad15bdabf7a = new L.BeautifyIcon.icon(
+                {"backgroundColor": "yellow", "borderColor": "yellow", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": false, "spin": false, "textColor": "white"}
+            )
+            marker_2485a8537d45a6c80a35932e56a4cb67.setIcon(beautify_icon_40e1b384295da9c9d1aa5ad15bdabf7a);
+        
+    
+        var popup_40cf72d2b43edee66035c03f8ba801e0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_48c186c207fb72eb55eeb85fb75d3626 = $(`<div id="html_48c186c207fb72eb55eeb85fb75d3626" style="width: 100.0%; height: 100.0%;"><b>Chihuahua</b><br>Chihuahua is famous for its dairy products, especially cheese, which brings a rich, creamy flavor to dishes like queso Chihuahua, complementing corn tortillas perfectly.</div>`)[0];
+                popup_40cf72d2b43edee66035c03f8ba801e0.setContent(html_48c186c207fb72eb55eeb85fb75d3626);
+            
+        
+
+        marker_2485a8537d45a6c80a35932e56a4cb67.bindPopup(popup_40cf72d2b43edee66035c03f8ba801e0)
+        ;
+
+        
+    
+</script>
+</html>
